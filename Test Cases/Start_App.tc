@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Use to first open app</description>
+   <name>Start_App</name>
+   <tag>Develop</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ffb4a2d-b5b2-45f0-8809-7e03381e83a8</testCaseGuid>
+</TestCaseEntity>

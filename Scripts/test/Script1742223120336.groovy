@@ -1,9 +1,8 @@
-import java.io.*
 import java.util.regex.Pattern
 import java.util.regex.Matcher
-import java.io.*
 import java.util.regex.Pattern
 import java.util.regex.Matcher
+import java.lang.Math
 import java.awt.*
 import java.awt.image.BufferedImage
 import javax.imageio.ImageIO
@@ -23,6 +22,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+
+import dev.failsafe.internal.util.Maths
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
@@ -78,10 +79,13 @@ if (matcher.find()) {
 	println("🎯 Vị trí Dismiss - x: " + x + ", y: " + y + ", width: " + width + ", height: " + height)
 	int a = Integer.parseInt(x)
 	int b = Integer.parseInt(y)
-	
+	int c = Integer.parseInt(width)
+	int d = Integer.parseInt(height)
+	int t1 = Math.floor(a/2 + c/4)
+	int t2 = Math.floor(b/2 + d/4)
 	// Sử dụng tapAtPosition với tọa độ đã chuyển đổi
-	Mobile.tapAtPosition(a, b)
-
+	Mobile.tapAtPosition(t1, t2)
+    Mobile.callTestCase(findTestCase('test'), null)
 } else {
 	println("Không tìm thấy thông tin vị trí 'Dismiss'.")
 }

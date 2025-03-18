@@ -17,8 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\trant\\Downloads\\FCdemo.apk', false)
-//Mobile.tapAtPosition(200, 200, FailureHandling.STOP_ON_FAILURE)
-Mobile.swipe(100, 600, 100, 200) // Vuốt từ vị trí (100,800) lên (100,400)
-
-Mobile.tapAtPosition(200, 200)
