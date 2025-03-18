@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>close ads open if appear</description>
+   <name>Check ads open</name>
+   <tag>ads open</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>40843bb2-e9de-4d19-ac26-5f6f3884c107</testCaseGuid>
+</TestCaseEntity>
